@@ -24,7 +24,7 @@ function fetch<T>(endpoint: string): Promise<T> {
  * @param filtering : string - supports filtering option. see: https://the-one-api.dev/documentation#5
  * @returns movie endpoint
  */
-function createEndpoint(
+export function createEndpoint(
   id?: string,
   isQuote?: boolean,
   pagination?: string,
@@ -68,7 +68,7 @@ export function getMovies<T>(
   filtering?: string,
 ): Promise<T> {
   const endpoint = createEndpoint(undefined, false, pagination, sorting, filtering);
-  return fetch(endpoint);
+  return fetch<T>(endpoint);
 }
 
 export function getMovieById<T>(
@@ -78,7 +78,7 @@ export function getMovieById<T>(
   filtering?: string,
 ): Promise<T> {
   const endpoint = createEndpoint(id, false, pagination, sorting, filtering);
-  return fetch(endpoint);
+  return fetch<T>(endpoint);
 }
 
 export function getQuote<T>(
