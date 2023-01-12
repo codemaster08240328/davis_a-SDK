@@ -1,6 +1,6 @@
 {
-  "name": "the_lord_of_the_rings_sdk",
-  "version": "1.0.0",
+  "name": "the_one_api-sdk",
+  "version": "1.0.2",
   "description": "SDK for consuming the Lord of the Rings API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
