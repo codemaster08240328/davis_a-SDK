@@ -28,3 +28,11 @@ movie.getQuote('movie-id')
 ## Pagination, Sorting and Filtering works as designed.
 Check the `the-one-api` documentation.
 https://the-one-api.dev/documentation#5
+
+## How to test
+```
+npm run test
+```
+
+## Local development
+You can see local development code snippet inside `/exmpales`
